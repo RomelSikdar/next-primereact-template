@@ -1,0 +1,3 @@
+@layer tailwind-base, primereact, tailwind-utilities;
+
+@import "../lara-dark-cyan/theme.css" layer(primereact);

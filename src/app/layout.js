@@ -1,5 +1,9 @@
 import { Inter } from "next/font/google";
+import { PrimeReactProvider } from "primereact/api";
 import "./globals.css";
+import "primeicons/primeicons.css";
+import "primeflex/primeflex.css";
+import "primereact/resources/primereact.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +15,18 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <link id="theme-css" rel="stylesheet" href="/themes/light/theme.css" />
+      </head>
+      <body className={inter.className}>
+        <PrimeReactProvider
+          value={{
+            ripple: true,
+          }}
+        >
+          {children}
+        </PrimeReactProvider>
+      </body>
     </html>
   );
 }

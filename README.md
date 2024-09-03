@@ -20,6 +20,17 @@ You can start editing the page by modifying `app/page.js`. The page auto-updates
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+### Changing the PrimeReact Theme
+
+To change the prime react theme just modify theme import in `theme.css` and `theme-dark.css` located in public theme with the theme you want to use in your application.
+
+**Default Theme configuration**
+
+- Theme ID : `theme-css`
+- Theme name : `light`
+
+**Note:** Remove the unnecessary theme folders from the public theme folder to run the application in much more efficient way.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
