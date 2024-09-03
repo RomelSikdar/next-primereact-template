@@ -22,7 +22,7 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ### Changing the PrimeReact Theme
 
-To change the prime react theme just modify theme import in `theme.css` and `theme-dark.css` located in public theme with the theme you want to use in your application.
+To change the prime react theme just modify theme import in `theme.css` located in public `theme/light` and `theme/dark` with the theme you want to use in your application.
 
 **Default Theme configuration**
 
